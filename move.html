@@ -17,6 +17,19 @@
       .sidebar-nav {
         padding: 9px 0;
       }
+
+        .custom-div {
+            border-radius: 15px; /* Rounded corners */
+            margin: 10px; /* Space around the card */
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 20px; /* Padding inside the card */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center; /* Center the content */
+        }
+        .custom-div h5 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -58,23 +71,56 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-             <img width="100%" src="sidebar1.png"/>
-             <br/>
-             <img width="100%" src="sidebar2.png"/>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
-          <div class="hero-unit">
-              <img width ="100%" src="statement.png"/>
-            
+        <div class="container my-5">
+          <div class="row">
+              <!-- Item 1: View Activity -->
+              <div class="col-md-4">
+                  <div class="custom-div">
+                      <h5>View Activity</h5>
+                      <p>View your scheduled and historical transfer activity.</p>
+                  </div>
+              </div>
+              <!-- Item 2: Transfer Money -->
+              <div class="col-md-4">
+                  <div class="custom-div">
+                      <h5>Transfer Money</h5>
+                      <p>Move money between your accounts and loans.</p>
+                  </div>
+              </div>
+              <!-- Item 3: Pay a Person -->
+              <div class="col-md-4">
+                  <div class="custom-div">
+                      <h5>Pay a Person</h5>
+                      <p>Add contacts and send money to friends, family, and people you know.</p>
+                  </div>
+              </div>
           </div>
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-      </div><!--/row-->
+          <div class="row">
+              <!-- Item 4: Bill Pay -->
+              <div class="col-md-4">
+                  <div class="custom-div">
+                      <h5>Bill Pay</h5>
+                      <p>Pay your utilities bill, cell phone, and other recurring household charges.</p>
+                  </div>
+              </div>
+              <!-- Item 5: Wire Transfers -->
+              <div class="col-md-4">
+                  <div class="custom-div">
+                      <h5>Wire Transfers</h5>
+                      <p>Make a wire transfer, view wire transfer status, and incoming wire instructions.</p>
+                  </div>
+              </div>
+              <!-- Item 6: Check Deposit -->
+              <div class="col-md-4">
+                  <div class="custom-div">
+                      <h5>Check Deposit</h5>
+                      <p>Deposit checks into your DCU accounts electronically.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+        
+       </div></div>
 
 These are your accounts, including any business accounts on which you are an authorized signatory. Any external accounts that you link will appear here as well. The total amount aggregates the balances in your accounts, including external accounts. The account information for linked external accounts may not be the most recently available information. Such information may be more up-to-date when obtained directly from the relevant financial institution.
       <hr>

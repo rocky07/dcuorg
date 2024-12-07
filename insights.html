@@ -10,13 +10,23 @@
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-      .sidebar-nav {
-        padding: 9px 0;
-      }
+      .custom-div {
+            border-radius: 15px; /* Rounded corners */
+            margin: 15px 0; /* Space between rows */
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 20px; /* Padding inside the div */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .title {
+            font-size: 1.25rem; /* Larger title font */
+            font-weight: bold;
+        }
+        
+        .btn-custom {
+            border-radius: 10px; /* Rounded button */
+            padding: 10px 20px;
+            font-size: 0.875rem;
+        }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -47,7 +57,7 @@
             <ul class="nav">
               <li class="active"><a href="home.html">Accounts</a></li>
               <li><a href="insights.html">Insights</a></li>
-              <li><a href="#contact">Move Money</a></li>
+              <li><a href="move.html">Move Money</a></li>
               <li><a href="member.html">Membership</a></li>
             </ul>
             <p class="navbar-text pull-right">Logged in as <a href="#">rakeshramesan</a></p>
@@ -58,23 +68,39 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-             <img width="100%" src="sidebar1.png"/>
-             <br/>
-             <img width="100%" src="sidebar2.png"/>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
-          <div class="hero-unit">
-              <img width ="100%" src="statement.png"/>
-            
-          </div>
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-      </div><!--/row-->
+        <div class="container my-5">
+          <br/> <br/> <br/>
+          <!-- Row 1: FICO Score -->
+          <div class="custom-div text-center">
+              <div class="title">FICO® SCORE</div>
+              <div class="value">776</div>
+              <div class="subtext">↓ 9 points down since last month</div>
+              <button class="btn btn-outline-primary btn-custom mt-3">View FICO®</button>
+          </div>
+      
+          <!-- Row 2: FutureLook -->
+          <div class="custom-div text-center">
+              <div class="title">FUTURELOOK™</div>
+              <div class="subtitle">Free Checking 2</div>
+              <div class="d-flex justify-content-around my-3">
+                  <div class="value">$111.98</div>
+                  <div class="value">$111.98</div>
+              </div>
+              <div class="text-muted">Today | On Jan 05</div>
+              <button class="btn btn-outline-primary btn-custom mt-3">View Your Balance</button>
+          </div>
+      
+          <!-- Row 3: Net Worth -->
+          <div class="custom-div text-center">
+              <div class="title">NET WORTH</div>
+              <div class="value text-danger">-$19,762.21</div>
+              <div class="subtext">Total Net Worth</div>
+              <button class="btn btn-outline-primary btn-custom mt-3">View Your Net Worth</button>
+          </div>
+      </div>
+        
+       </div></div>
 
 These are your accounts, including any business accounts on which you are an authorized signatory. Any external accounts that you link will appear here as well. The total amount aggregates the balances in your accounts, including external accounts. The account information for linked external accounts may not be the most recently available information. Such information may be more up-to-date when obtained directly from the relevant financial institution.
       <hr>
